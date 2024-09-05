@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/*Color*/
+
+$peach: #E7816B;
+$light-peach: #FFAD9B;
+$black: #1D1C1E;
+$dark-grey: #333136;
+$white: #FFFFFF;
+$light-grey: #F1F3F5;
+
+
+/*Typography*/
+$font:  "Jost", serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+}

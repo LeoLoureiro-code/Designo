@@ -1,0 +1,38 @@
+@import "../../styles.scss";
+
+.nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 90px 0 90px;
+}
+
+.logo-div{
+    height: 24px;
+    width: 194px;
+
+    img{
+        width: 100%;
+    }
+}
+
+.links-div{
+    width: 30%;
+}
+
+.links-list{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: $font;
+}
+
+.links{
+    text-decoration: none;
+    list-style: none;
+    color: $black;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
