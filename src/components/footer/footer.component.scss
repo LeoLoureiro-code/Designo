@@ -11,6 +11,7 @@ footer{
     bottom: 0;
     width: 100%;
     text-align: center;
+    padding: 9rem 10rem 0 10rem;
 }
 
 .under-nav{
@@ -39,4 +40,52 @@ footer{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        font-family: $font;
+        color: $white;
+        
+        h2{
+            font-size: 40px;
+            font-weight: 400;
+            width: 300px;
+            text-align: start;
+            line-height: 40px;
+            margin-bottom: 1rem;
+        }
+
+        .info-paragraph{
+            font-weight: 400;
+            text-align: start;
+            width: 460px;
+        }
+
+    }
+
+    .get-in-touch-btn{
+        height: 56px;
+        width: 152px;
+        background-color: $white;
+        border-radius: 10px;
+        text-decoration: none;
+        color: $black;
+        font-family: $font;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        transition: .5s ease-in;
+    }
+
+    .get-in-touch-btn:hover{
+        color: $white;
+        background-color: $light-peach;
+    }
 }
