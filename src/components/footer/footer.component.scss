@@ -11,12 +11,21 @@ footer{
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 9rem 10rem 0 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div{
+    width: 70%;
 }
 
 .under-nav{
     height: 50px;
-
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-div{
@@ -27,6 +36,60 @@ footer{
         width: 100%;
     }
 }
+
+.links-div{
+    width: 35%;
+}
+
+.links-list{
+    display: flex;
+    justify-content: space-between;
+    font-family: $font;
+}
+
+.links{
+    text-decoration: none;
+    list-style: none;
+    color: $white;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+
+.br{
+    height: 2px;
+    width: 100%;
+    background-color: $dark-grey;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.company-info{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.address-div, .office-contact{
+    width: 100%;
+    display: flex;
+
+    span{
+        display: block;
+    }
+}
+
+.office-info{
+    color: $light-grey;
+    line-height: 1.5rem;
+    font-family: $font;
+}
+
 
 .contact-div{
     width: 70%;
