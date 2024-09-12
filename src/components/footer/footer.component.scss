@@ -18,6 +18,7 @@ footer{
 
 .footer-div{
     width: 70%;
+    position: relative;
 }
 
 .under-nav{
@@ -150,5 +151,20 @@ footer{
     .get-in-touch-btn:hover{
         color: $white;
         background-color: $light-peach;
+    }
+}
+
+.social-media-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+
+    .social-media-img:hover{
+        filter: brightness(150%);
+        cursor: pointer;
     }
 }
