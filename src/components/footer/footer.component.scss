@@ -168,3 +168,46 @@ footer{
         cursor: pointer;
     }
 }
+
+@media(width < 1200px){
+    .contact-div{
+        height: 350px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .info{
+        align-items: center !important;
+        justify-content: center;
+        width: 100%;
+
+        h2{
+            text-align: center !important;
+        }
+
+        .info-paragraph{
+            text-align: center !important;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .links-div{
+        width: 55%;
+    }
+
+    .social-media-div{
+        width: 30%;
+    }
+}
+
+@media(width < 700px){
+
+    //fix this
+    .footer-div{
+        display: flex;
+        flex-direction: column;
+    }
+}
