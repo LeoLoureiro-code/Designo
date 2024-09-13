@@ -36,3 +36,9 @@
 .links:hover{
     text-decoration: underline;
 }
+
+@media (width < 1200px) {
+    .links-div{
+        width: 60%;
+    }
+}
