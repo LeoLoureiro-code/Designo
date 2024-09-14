@@ -8,6 +8,12 @@
     padding: 50px 90px 0 90px;
 }
 
+.hamburger-div{
+    position: absolute;
+    right: 10%;
+    display: none;
+}
+
 .logo-div{
     height: 24px;
     width: 194px;
@@ -40,5 +46,16 @@
 @media (width < 1200px) {
     .links-div{
         width: 60%;
+    }
+}
+
+@media (width < 700px) {
+    .links-div{
+        display: none;
+    }
+
+    .hamburger-div{
+        display: block;
+        cursor: pointer;
     }
 }
