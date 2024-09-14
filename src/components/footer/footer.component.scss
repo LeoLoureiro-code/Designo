@@ -209,5 +209,17 @@ footer{
     .footer-div{
         display: flex;
         flex-direction: column;
+        
+        
+    }
+
+    .under-nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links-div{
+        flex-direction: column;
+        height: 100px;
     }
 }
