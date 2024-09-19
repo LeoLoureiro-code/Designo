@@ -10,6 +10,10 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: auto;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    clear: both;
 }
 
 .footer-div{
@@ -124,7 +128,7 @@ footer{
         .info-paragraph{
             font-weight: 400;
             text-align: start;
-            width: 460px;
+            width: 80%;
         }
 
     }
@@ -202,7 +206,7 @@ footer{
 @media(width < 700px){
 
     footer{
-        height: 815px;
+        height: 60%;
     }
     //fix this
     .footer-div{
@@ -230,5 +234,10 @@ footer{
 
     .company-info{
         flex-direction: column;
+    }
+
+    .contact-div{
+        padding: 1rem;
+
     }
 }
