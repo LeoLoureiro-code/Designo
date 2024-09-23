@@ -9,7 +9,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: auto;
+    width: 100%;
+    margin-top: 18rem;
+    position: relative;
 }
 
 .footer-div{
@@ -95,7 +97,6 @@ footer{
     background-image: url(../../../public/assets/shared/desktop/bg-pattern-call-to-action.svg);
     background-position: right;
     position: absolute;
-    top: -55%;
     top: -20%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -104,7 +105,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 5rem;
-    clear: both;
+
 
     .info{
         display: flex;
