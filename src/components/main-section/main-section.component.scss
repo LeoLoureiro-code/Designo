@@ -10,23 +10,40 @@ section{
     font-family: $font;
     display: flex;
     color: $white;
+    background-image: url(../../../public/assets/home/desktop/bg-pattern-hero-home.svg);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .about-main{
-    width: 550px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0 0 0 4rem;
+    margin-left: 5rem;
 }
 
 h1{
     font-size: 50px;
     font-weight: 500;
+    line-height: 3.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .about-main-paragraph{
     font-size: 20px;
+    margin-bottom: 2.5rem;
 }
 
 .about-main-anchor{
     @extend %btn;
+}
+
+.about-main-anchor:hover{
+    color: $white;
+    background-color: $light-peach;
 }
 
 .about-main-img{
