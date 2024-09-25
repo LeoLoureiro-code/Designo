@@ -27,3 +27,18 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+%btn{
+    height: 56px;
+    width: 152px;
+    background-color: $white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: $black;
+    font-family: $font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    transition: .5s ease-in;
+}
