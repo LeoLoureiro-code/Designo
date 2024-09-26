@@ -23,6 +23,8 @@ section{
     justify-content: center;
     padding: 0 0 0 4rem;
     margin-left: 5rem;
+
+
 }
 
 h1{
@@ -49,7 +51,21 @@ h1{
 .about-main-img{
     position: absolute;
     clear: both;
-    height: 873px;
     right: 0;
     top: 0;
+
+}
+
+@media(width <= 1200px){
+
+    .about-main{
+        text-align: center;
+        
+    }
+
+    .about-main-img{
+        left: 50%;
+        transform: translate(-50%, 0);
+        
+    }
 }

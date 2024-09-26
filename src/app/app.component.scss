@@ -8,3 +8,9 @@
     width: 100%;
     padding: 0 18rem 0 18rem;
 }
+
+@media(width <= 1200px){
+    .content{
+    padding: 0 8rem 0 8rem;
+}
+}
