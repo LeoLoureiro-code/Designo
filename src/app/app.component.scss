@@ -9,8 +9,20 @@
     padding: 0 18rem 0 18rem;
 }
 
+@media(width <= 1500px){
+    .content{
+    padding: 0 7rem 0 7rem;
+    }
+}
+
 @media(width <= 1200px){
     .content{
     padding: 0 8rem 0 8rem;
+}
+
+@media(width <= 700px){
+    .content{
+    padding: 0;
+    }
 }
 }

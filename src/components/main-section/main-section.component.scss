@@ -37,6 +37,7 @@ h1{
 .about-main-paragraph{
     font-size: 20px;
     margin-bottom: 2.5rem;
+    clear: both;
 }
 
 .about-main-anchor{
@@ -49,23 +50,56 @@ h1{
 }
 
 .about-main-img{
+    right: -5%;
     position: absolute;
-    clear: both;
-    right: 0;
-    top: 0;
-
 }
 
-@media(width <= 1200px){
+
+
+@media(width <= 1500px){
+
+    section{
+        padding: 3rem 0 0 0;
+        height: 850px;
+    }
 
     .about-main{
         text-align: center;
-        
+        margin: 0 auto;
+        display: block;
+        padding: 0;
     }
 
     .about-main-img{
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, 30%);
         
     }
+
+    .about-main-anchor{
+        margin: 0 auto;
+    }
+}
+
+@media(width <= 1200px){
+
+}
+
+
+@media(width <= 700px){
+
+}
+
+@media(width <= 420px){
+
+    section{
+        height: 900px;
+    }
+
+    .about-main-img{
+        left: 50%;
+        transform: translate(-50%, 37%);
+        
+    }
+
 }
