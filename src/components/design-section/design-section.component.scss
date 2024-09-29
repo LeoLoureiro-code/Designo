@@ -1,0 +1,123 @@
+@import "../../styles.scss";
+
+section{
+    width: 1110px;
+    height: 640px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    font-family: $font;
+    margin: auto;
+    margin-top: 4rem;
+    color: $white;
+}
+
+.design-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.web-design{
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background-image: url(../../../public/assets/home/desktop/image-web-design-large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app-design{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background-image: url(../../../public/assets/home/desktop/image-app-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.graphic-design{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-image: url(../../../public/assets/home/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.design-title{
+    font-weight: 500;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.design-paragraph{
+    margin-top: 1rem;
+    font-size: 18px;
+    z-index: 1;
+
+    span{
+        color: $peach;
+        vertical-align: text-top;
+        z-index: 1;
+    }
+}
+
+
+.hover-div{
+    height: 100%;
+    width: 100%;
+    background-color: $light-peach;
+    opacity: .6;
+    position: absolute;
+    display: none;
+}
+
+.web-design:hover .hover-div{
+    display: block;
+}
+
+.app-design:hover .hover-div{
+    display: block;
+}
+
+.graphic-design:hover .hover-div{
+    display: block;
+}
+
+
+@media(width <= 1200px){
+    section{
+        width: 689px;
+        height: 649px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .web-design{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .app-design{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .graphic-design{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+}
+
+@media(width <= 700px){
+    section{
+        height: 798px;
+        max-width: 327px;
+       
+    }
+}
