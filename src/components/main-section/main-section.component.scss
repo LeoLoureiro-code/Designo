@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 section{
-    width: 100%;
+    width: 1111px;
     background-color: $peach;
     height: 640px;
     border-radius: 15px;
@@ -50,7 +50,7 @@ h1{
 }
 
 .about-main-img{
-    right: -5%;
+    right: -10%;
     position: absolute;
 }
 
@@ -73,7 +73,7 @@ h1{
     .about-main-img{
         left: 50%;
         transform: translate(-50%, 30%);
-        
+        margin: 0;
     }
 
     .about-main-anchor{
@@ -83,9 +83,13 @@ h1{
 
 @media(width <= 1200px){
 
+    section{
+        width: 689px;
+    }
+
     .about-main-img{
         left: 50%;
-        transform: translate(-50%, 40%);
+        transform: translate(-50%, 30%);
         
     }
 }
@@ -93,6 +97,29 @@ h1{
 
 @media(width <= 700px){
 
+    section{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-main{
+        width: 100%;
+    }
+    
+    h1{
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 2rem;
+        margin-bottom: 2.5rem;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .about-main-paragraph{
+        font-size: 16px;
+        margin-bottom: 2.5rem;
+        padding: 0 2rem 0 2rem;
+        clear: both;
+    }
 }
 
 @media(width <= 420px){
