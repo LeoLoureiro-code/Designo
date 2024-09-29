@@ -91,7 +91,7 @@ footer{
 
 
 .contact-div{
-    width: 70%;
+    width: 1111px;
     height: 292px;
     background-color: $peach;
     background-image: url(../../../public/assets/shared/desktop/bg-pattern-call-to-action.svg);
@@ -159,6 +159,7 @@ footer{
 @media(width <= 1200px){
     .contact-div{
         height: 350px;
+        width: 689px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -193,7 +194,15 @@ footer{
 @media(width <= 700px){
 
     footer{
-        height: 70%;
+        height: 805px;
+        margin-top: 379px;
+        width: 100%;
+    }
+
+
+    .contact-div{
+        height: 379px;
+        width: 90%;
     }
     //fix this
     .footer-div{
