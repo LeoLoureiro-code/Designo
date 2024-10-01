@@ -5,11 +5,14 @@ import { FooterComponent } from "../components/footer/footer.component";
 import { MainSectionComponent } from "../components/main-section/main-section.component";
 import { DesignSectionComponent } from "../components/design-section/design-section.component";
 import { TeamSectionComponent } from "../components/team-section/team-section.component";
+import { AboutUsComponent } from '../components/about-us/about-us.component';
+import { LocationsComponent } from '../components/locations/locations.component';
+import { ContactUsComponent } from '../components/contact-us/contact-us.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, MainSectionComponent, DesignSectionComponent, TeamSectionComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, MainSectionComponent, DesignSectionComponent, TeamSectionComponent, AboutUsComponent, LocationsComponent,ContactUsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
