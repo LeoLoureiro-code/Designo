@@ -1,6 +1,6 @@
 <nav class="nav">
     <div class="logo-div">
-        <img src="/assets/shared/desktop/logo-dark.png" alt="Designo Logo">
+       <a [routerLink]="['/home']" routerLinkActive="router-link-active"> <img src="/assets/shared/desktop/logo-dark.png" alt="Designo Logo"></a>
     </div>
 
     <div class="hamburger-div">
@@ -8,10 +8,9 @@
     </div>
     <div class="links-div">
         <ul class="links-list">
-            <!--Fix the routing link-->
-            <a routerLink="home" class="links">OUR COMPANY</a>
-            <a href="" class="links">LOCATIONS</a>
-            <a href="" class="links">CONTACT</a>
+            <a [routerLink]="['/about']" routerLinkActive="router-link-active" class="links">OUR COMPANY</a>
+            <a [routerLink]="['/locations']" routerLinkActive="router-link-active" class="links">LOCATIONS</a>
+            <a [routerLink]="['/contact']" routerLinkActive="router-link-active" class="links">CONTACT</a>
         </ul>
     </div>
 </nav>
