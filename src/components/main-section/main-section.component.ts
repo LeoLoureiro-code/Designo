@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'main-section',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './main-section.component.html',
   styleUrl: './main-section.component.scss'
 })
