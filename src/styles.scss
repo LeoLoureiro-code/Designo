@@ -7,7 +7,7 @@ $light-peach: #FFAD9B;
 $black: #1D1C1E;
 $dark-grey: #333136;
 $white: #FFFFFF;
-$light-grey: #F1F3F5;
+$light-grey: #f5e3df;
 
 
 /*Typography*/
@@ -41,4 +41,22 @@ body{
     align-items: center;
     font-weight: 500;
     transition: .5s ease-in;
+}
+
+%about-section-subtitle{
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: $peach;
+}
+
+%about-section{
+    width: 1111px;
+    margin-bottom: 8rem;
+    background-color: $light-grey;
+    display: flex;
+    font-family: $font;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
 }
