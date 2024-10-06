@@ -74,39 +74,7 @@ main{
     width: 80%;
 }
 
-.locations-div{
-    width: 1111px;
-    display: flex;
-    justify-content: space-around;
-    background-image: url(../../../public/assets/shared/desktop/bg-pattern-small-circle.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: $font;
-    margin-bottom: 4rem;
-}
 
-.location{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 4rem;
-}
-
-h3{
-    margin-bottom: 3rem;
-    font-weight: 400;
-}
-
-.location-anchor{
-    @extend %btn;
-    background-color: $peach;
-    color: $white;
-}
-
-.location-anchor:hover{
-    background-color: $light-peach;
-}
 
 .real-deal-div{
     @extend %about-section;
@@ -208,11 +176,6 @@ h3{
         margin-bottom: 4rem;
     }
 
-    .locations-div{
-        width: 690px;
-        flex-direction: column;
-    }
-
     .real-deal-div{
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -256,10 +219,6 @@ h3{
         img{
             top: -50%;
         }
-    }
-    .locations-div{
-        width: 90%;
-
     }
 
     .real-deal-div{
