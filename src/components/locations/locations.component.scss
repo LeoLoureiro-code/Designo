@@ -1,0 +1,29 @@
+@import "../../styles.scss";
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 1111px;
+}
+
+.location-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: $light-grey;
+}
+
+.location-info{
+    width: 730px;
+    display: flex;
+}
+
+.reverse{
+   
+}
+
+.location-map{
+    width: 350px;
+}
