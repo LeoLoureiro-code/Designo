@@ -2,28 +2,15 @@
 
 
 section{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     width: 1111px;
+    height: 1042px;
 }
 
 .location-div{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 2rem;
-    background-color: $light-grey;
-}
-
-.location-info{
-    width: 730px;
-    display: flex;
-}
-
-.reverse{
-   
-}
-
-.location-map{
-    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
