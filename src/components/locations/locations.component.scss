@@ -1,6 +1,6 @@
 @import "../../styles.scss";
 
-
+/*fix grid columns and rows*/
 section{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -16,14 +16,14 @@ section{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 2rem;
-
+    font-family: $font;
 }
 
 .location-info{
     grid-column: 1/ 3;
     background-color: $light-grey;
     border-radius: 20px;
-
+    display: flex;
 }
 
 .location-australia-img{
@@ -31,10 +31,6 @@ section{
     grid-row: 1/3;
 }
 
-.location-australia{
-    grid-column: 2/4;
-    grid-row: 1/3;
-}
 
 .location-map{
     grid-column-start: 3;
@@ -45,4 +41,13 @@ section{
         height: 100%;
         width: 100%;
     }
+}
+
+h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.location-info{
+    display: flex;
 }
