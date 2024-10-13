@@ -24,6 +24,12 @@ section{
     background-color: $light-grey;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
+    padding: 4rem 0 0 5rem;
+}
+
+.location-office-contact{
+    display: flex;
 }
 
 .location-australia-img{
@@ -46,8 +52,23 @@ section{
 h2{
     font-weight: 400;
     font-size: 40px;
+    margin-bottom: 2rem;
+    color: $peach;
 }
 
-.location-info{
-    display: flex;
+.location-office{
+    width: 45%;
+}
+
+@media(width <= 1200px){
+    section{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+        font-family: $font;
+    }
+}
+
+@media(width <= 700px){
+
 }
