@@ -4,11 +4,13 @@
 section{
     width: 1111px;
     font-family: $font;
+
 }
 .contact{
     width: 100%;
-    height: 480px;
+    height: 500px;
     background-color: $peach;
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     background-image: url(../../../public/assets/contact/desktop/bg-pattern-hero-desktop.svg);
@@ -41,7 +43,9 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 90%;
     padding: 0 3rem 0 3rem;
+    position: relative;
 }
 
 .input-div{
@@ -71,5 +75,9 @@ label{
 }
 
 .submit{
-    margin-top: 2rem;
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+    @extend %btn;
+    border: none;
 }
