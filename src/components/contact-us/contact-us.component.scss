@@ -81,3 +81,21 @@ label{
     @extend %btn;
     border: none;
 }
+
+@media(width <= 1200px){
+
+    section{
+        width: 689px;
+    }
+
+    .contact{
+        justify-content: center;
+        flex-direction:column;
+    }
+    
+
+}
+
+@media(width <= 700px){
+    
+}
