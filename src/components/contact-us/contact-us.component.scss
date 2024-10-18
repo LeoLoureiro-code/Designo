@@ -86,13 +86,37 @@ label{
 
     section{
         width: 689px;
+        height: 711px;
     }
 
     .contact{
         justify-content: center;
+        align-items: center;
         flex-direction:column;
+        height: inherit;
     }
     
+    .contact-info, .contact-form{
+        width: 100%;
+    }
+
+    .contact-form{
+        padding: 0;
+    }
+
+    h2{
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        color: $white;
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .submit{
+        bottom: 5%;
+        right: 0%;
+
+    }
 
 }
 
