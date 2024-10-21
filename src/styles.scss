@@ -8,7 +8,7 @@ $black: #1D1C1E;
 $dark-grey: #333136;
 $white: #FFFFFF;
 $light-grey: #f5e3df;
-
+$contat-div-height: 379px;
 
 /*Typography*/
 $font:  "Jost", serif;
@@ -20,12 +20,8 @@ $font:  "Jost", serif;
 }
 
 body{
+    position: relative;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 %btn{
