@@ -2,12 +2,15 @@
 
 
 section{
-    width: 1111px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: $font;
 
 }
 .contact{
-    width: 100%;
+    width: 1111px;
     height: 500px;
     background-color: $peach;
     border-radius: 15px;
@@ -84,16 +87,12 @@ label{
 
 @media(width <= 1200px){
 
-    section{
-        width: 689px;
-        height: 711px;
-    }
-
     .contact{
         justify-content: center;
         align-items: center;
         flex-direction:column;
-        height: inherit;
+        width: 689px;
+        height: 711px;
     }
     
     .contact-info, .contact-form{
@@ -122,4 +121,16 @@ label{
 
 @media(width <= 700px){
     
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact{
+        width: 90%;
+        padding: 0 1rem 0 1rem;
+        height: 900px;
+    }
 }

@@ -8,7 +8,7 @@ section{
     gap: 2rem;
     width: 1111px;
     height: 1042px;
-
+    margin: 0 auto;
 }
 
 .location-div{
@@ -32,9 +32,10 @@ section{
     display: flex;
 }
 
+
 .location-australia-img{
     grid-column: 1 !important;
-    grid-row: 1/3;
+    grid-row: 1;
 }
 
 
@@ -63,12 +64,70 @@ h2{
 @media(width <= 1200px){
     section{
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 2rem;
         font-family: $font;
+        height: auto;
+        width: 689px;
+    }
+
+    .location-div{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 3rem;
+        border-radius: 0;
+    }
+
+    .location-info{
+        height: 326px;;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .location-map{
+        height: 326px;
+        grid-column: 1;
+        grid-row: 1;
+        border-radius: 0px;
     }
 }
 
 @media(width <= 700px){
+
+    section{
+        width: 90%;
+    }
+
+    .location-div{
+        height: 714px;
+        gap: 0 !important;
+    }
+
+    .location-info{
+        height: 375px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .location-map{
+        height: 375px;
+        
+        img{
+            border-radius: 0;
+        }
+    }
+
+    .location-office-contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .location-office{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 
 }
