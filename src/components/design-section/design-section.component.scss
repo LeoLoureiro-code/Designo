@@ -21,6 +21,7 @@ section{
     border-radius: 10px;
     filter: brightness(80%);
     cursor: pointer;
+    color: $white;
 }
 
 .web-design{
@@ -73,6 +74,8 @@ section{
     background-color: $light-peach;
     opacity: .6;
     position: absolute;
+    right: 0;
+    bottom: 0;
     display: none;
 }
 
