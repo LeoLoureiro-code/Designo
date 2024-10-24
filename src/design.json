@@ -1,0 +1,193 @@
+{
+    "webDesign": [
+      {
+        "title": "Responsive Web Design",
+        "subtitle": "Creating websites that work on all devices",
+        "projects": [
+          {
+            "image": "responsive_web_1.png",
+            "title": "Mobile-First Design",
+            "subtitle": "Building for mobile devices first"
+          },
+          {
+            "image": "responsive_web_2.png",
+            "title": "Grid Layouts",
+            "subtitle": "Using CSS Grid for layouts"
+          },
+          {
+            "image": "responsive_web_2.png",
+            "title": "Grid Layouts",
+            "subtitle": "Using CSS Grid for layouts"
+          },
+          {
+            "image": "responsive_web_2.png",
+            "title": "Grid Layouts",
+            "subtitle": "Using CSS Grid for layouts"
+          },
+          {
+            "image": "responsive_web_2.png",
+            "title": "Grid Layouts",
+            "subtitle": "Using CSS Grid for layouts"
+          },
+          {
+            "image": "responsive_web_2.png",
+            "title": "Grid Layouts",
+            "subtitle": "Using CSS Grid for layouts"
+          }
+        ],
+        "anchors": [
+          {
+            "title": "Basics of Responsiveness"
+          },
+          {
+            "title": "Advanced CSS Techniques"
+          }
+        ]
+      },
+      {
+        "title": "Web Animation",
+        "subtitle": "Adding life to web pages with animations",
+        "projects": [
+          {
+            "image": "web_animation_1.png",
+            "title": "CSS Animations",
+            "subtitle": "Simple animations using CSS"
+          },
+          {
+            "image": "web_animation_2.png",
+            "title": "JavaScript Animations",
+            "subtitle": "Advanced control with JavaScript"
+          },
+          {
+            "image": "responsive_web_2.png",
+            "title": "Grid Layouts",
+            "subtitle": "Using CSS Grid for layouts"
+          },
+          {
+            "image": "responsive_web_2.png",
+            "title": "Grid Layouts",
+            "subtitle": "Using CSS Grid for layouts"
+          },
+          {
+            "image": "responsive_web_2.png",
+            "title": "Grid Layouts",
+            "subtitle": "Using CSS Grid for layouts"
+          }
+        ],
+        "anchors": [
+          {
+            "title": "CSS Animation Basics"
+          },
+          {
+            "title": "JavaScript Libraries"
+          }
+        ]
+      }
+    ],
+    "appDesign": [
+      {
+        "title": "Mobile App UI Design",
+        "subtitle": "Creating user interfaces for mobile apps",
+        "projects": [
+          {
+            "image": "mobile_app_1.png",
+            "title": "User Onboarding",
+            "subtitle": "Designing smooth onboarding experiences"
+          },
+          {
+            "image": "mobile_app_2.png",
+            "title": "In-App Navigation",
+            "subtitle": "Ensuring intuitive navigation"
+          },
+          {
+            "image": "responsive_web_2.png",
+            "title": "Grid Layouts",
+            "subtitle": "Using CSS Grid for layouts"
+          }
+        ],
+        "anchors": [
+          {
+            "title": "Design Principles"
+          },
+          {
+            "title": "Prototyping Tools"
+          }
+        ]
+      },
+      {
+        "title": "Cross-Platform App Design",
+        "subtitle": "Designing for both iOS and Android",
+        "projects": [
+          {
+            "image": "cross_platform_1.png",
+            "title": "Consistent UI",
+            "subtitle": "Maintaining a consistent design across platforms"
+          },
+          {
+            "image": "cross_platform_2.png",
+            "title": "Platform-Specific Features",
+            "subtitle": "Adapting to platform-specific design patterns"
+          }
+        ],
+        "anchors": [
+          {
+            "title": "Understanding Design Guidelines"
+          },
+          {
+            "title": "Adapting for Different Screens"
+          }
+        ]
+      }
+    ],
+    "graphicDesign": [
+      {
+        "title": "Logo Design",
+        "subtitle": "Crafting memorable logos for brands",
+        "projects": [
+          {
+            "image": "logo_design_1.png",
+            "title": "Minimalist Logos",
+            "subtitle": "Designing clean and simple logos"
+          },
+          {
+            "image": "logo_design_2.png",
+            "title": "Brand Identity",
+            "subtitle": "Creating logos that represent the brand identity"
+          }
+        ],
+        "anchors": [
+          {
+            "title": "Logo Design Basics"
+          },
+          {
+            "title": "Vector Graphics"
+          }
+        ]
+      },
+      {
+        "title": "Poster and Print Design",
+        "subtitle": "Designing posters and print materials",
+        "projects": [
+          {
+            "image": "poster_design_1.png",
+            "title": "Event Posters",
+            "subtitle": "Creative designs for events and promotions"
+          },
+          {
+            "image": "poster_design_2.png",
+            "title": "Flyers and Brochures",
+            "subtitle": "Designing engaging printed materials"
+          }
+        ],
+        "anchors": [
+          {
+            "title": "Layout Techniques"
+          },
+          {
+            "title": "Typography in Print"
+          }
+        ]
+      }
+    ]
+  }
+  
