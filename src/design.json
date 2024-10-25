@@ -1,190 +1,116 @@
 {
     "webDesign": [
       {
-        "title": "Responsive Web Design",
-        "subtitle": "Creating websites that work on all devices",
+        "title": "Web Design",
+        "subtitle": "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
         "projects": [
           {
-            "image": "responsive_web_1.png",
-            "title": "Mobile-First Design",
-            "subtitle": "Building for mobile devices first"
+            "image": "add image",
+            "title": "EXPRESS",
+            "subtitle": "A multi-carrier shipping website for ecommerce businesses"
           },
           {
-            "image": "responsive_web_2.png",
-            "title": "Grid Layouts",
-            "subtitle": "Using CSS Grid for layouts"
+            "image": "add image",
+            "title": "TRANSFER",
+            "subtitle": "Site for low-cost money transfers and sending money within seconds"
           },
           {
-            "image": "responsive_web_2.png",
-            "title": "Grid Layouts",
-            "subtitle": "Using CSS Grid for layouts"
+            "image": "add image",
+            "title": "PHOTON",
+            "subtitle": "A state-of-the-art music player with high-resolution audio and DSP effects"
           },
           {
-            "image": "responsive_web_2.png",
-            "title": "Grid Layouts",
-            "subtitle": "Using CSS Grid for layouts"
+            "image": "add image",
+            "title": "BUILDER",
+            "subtitle": "Connects users with local contractors based on their location"
           },
           {
-            "image": "responsive_web_2.png",
-            "title": "Grid Layouts",
-            "subtitle": "Using CSS Grid for layouts"
+            "image": "add image",
+            "title": "BLOGR",
+            "subtitle": "Blogr is a platform for creating an online blog or publication"
           },
           {
-            "image": "responsive_web_2.png",
-            "title": "Grid Layouts",
-            "subtitle": "Using CSS Grid for layouts"
+            "image": "add image",
+            "title": "CAMP",
+            "subtitle": "Get expert training in coding, data, design, and digital marketing"
           }
         ],
         "anchors": [
           {
-            "title": "Basics of Responsiveness"
+            "title": "APP DESIGN"
           },
           {
-            "title": "Advanced CSS Techniques"
+            "title": "GRAPHIC DESIGN"
           }
         ]
       },
       {
-        "title": "Web Animation",
-        "subtitle": "Adding life to web pages with animations",
+        "title": "App Design",
+        "subtitle": "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
         "projects": [
           {
-            "image": "web_animation_1.png",
-            "title": "CSS Animations",
-            "subtitle": "Simple animations using CSS"
+            "image": "add image",
+            "title": "AIRFILTER",
+            "subtitle": "Solving the problem of poor indoor air quality by filtering the air"
           },
           {
-            "image": "web_animation_2.png",
-            "title": "JavaScript Animations",
-            "subtitle": "Advanced control with JavaScript"
+            "image": "add image",
+            "title": "EYECAM",
+            "subtitle": "Product that lets you edit your favorite photos and videos at any time"
           },
           {
-            "image": "responsive_web_2.png",
-            "title": "Grid Layouts",
-            "subtitle": "Using CSS Grid for layouts"
+            "image": "add image",
+            "title": "FACEIT",
+            "subtitle": "Get to meet your favorite internet superstar with the faceit app"
           },
           {
-            "image": "responsive_web_2.png",
-            "title": "Grid Layouts",
-            "subtitle": "Using CSS Grid for layouts"
+            "image": "add image",
+            "title": "TODO",
+            "subtitle": "A todo app that features cloud sync with light and dark mode"
           },
           {
-            "image": "responsive_web_2.png",
-            "title": "Grid Layouts",
-            "subtitle": "Using CSS Grid for layouts"
+            "image": "add image",
+            "title": "LOOPSTUDIOS",
+            "subtitle": "A VR experience app made for Loopstudios"
           }
         ],
         "anchors": [
           {
-            "title": "CSS Animation Basics"
+            "title": "WEB DESIGN"
           },
           {
-            "title": "JavaScript Libraries"
+            "title": "GRAPHIC DESIGN"
           }
         ]
       }
     ],
     "appDesign": [
       {
-        "title": "Mobile App UI Design",
-        "subtitle": "Creating user interfaces for mobile apps",
+        "title": "Graphic Design",
+        "subtitle": "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
         "projects": [
           {
-            "image": "mobile_app_1.png",
-            "title": "User Onboarding",
-            "subtitle": "Designing smooth onboarding experiences"
+            "image": "add image",
+            "title": "TIM BROWN",
+            "subtitle": "A book cover designed for Tim Brown’s new release, ‘Change’"
           },
           {
-            "image": "mobile_app_2.png",
-            "title": "In-App Navigation",
-            "subtitle": "Ensuring intuitive navigation"
+            "image": "add image",
+            "title": "BOXED WATER",
+            "subtitle": "A simple packaging concept made for Boxed Water"
           },
           {
-            "image": "responsive_web_2.png",
-            "title": "Grid Layouts",
-            "subtitle": "Using CSS Grid for layouts"
+            "image": "add image",
+            "title": "SCIENCE!",
+            "subtitle": "A poster made in collaboration with the Federal Art Project"
           }
         ],
         "anchors": [
           {
-            "title": "Design Principles"
+            "title": "APP DESIGN"
           },
           {
-            "title": "Prototyping Tools"
-          }
-        ]
-      },
-      {
-        "title": "Cross-Platform App Design",
-        "subtitle": "Designing for both iOS and Android",
-        "projects": [
-          {
-            "image": "cross_platform_1.png",
-            "title": "Consistent UI",
-            "subtitle": "Maintaining a consistent design across platforms"
-          },
-          {
-            "image": "cross_platform_2.png",
-            "title": "Platform-Specific Features",
-            "subtitle": "Adapting to platform-specific design patterns"
-          }
-        ],
-        "anchors": [
-          {
-            "title": "Understanding Design Guidelines"
-          },
-          {
-            "title": "Adapting for Different Screens"
-          }
-        ]
-      }
-    ],
-    "graphicDesign": [
-      {
-        "title": "Logo Design",
-        "subtitle": "Crafting memorable logos for brands",
-        "projects": [
-          {
-            "image": "logo_design_1.png",
-            "title": "Minimalist Logos",
-            "subtitle": "Designing clean and simple logos"
-          },
-          {
-            "image": "logo_design_2.png",
-            "title": "Brand Identity",
-            "subtitle": "Creating logos that represent the brand identity"
-          }
-        ],
-        "anchors": [
-          {
-            "title": "Logo Design Basics"
-          },
-          {
-            "title": "Vector Graphics"
-          }
-        ]
-      },
-      {
-        "title": "Poster and Print Design",
-        "subtitle": "Designing posters and print materials",
-        "projects": [
-          {
-            "image": "poster_design_1.png",
-            "title": "Event Posters",
-            "subtitle": "Creative designs for events and promotions"
-          },
-          {
-            "image": "poster_design_2.png",
-            "title": "Flyers and Brochures",
-            "subtitle": "Designing engaging printed materials"
-          }
-        ],
-        "anchors": [
-          {
-            "title": "Layout Techniques"
-          },
-          {
-            "title": "Typography in Print"
+            "title": "WEB DESIGN"
           }
         ]
       }
