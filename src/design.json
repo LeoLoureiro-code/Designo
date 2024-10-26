@@ -1,8 +1,8 @@
 {
-    "webDesign": [
+    "Design": [
       {
-        "title": "Web Design",
-        "subtitle": "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
+        "design-title": "Web Design",
+        "design-subtitle": "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
         "projects": [
           {
             "image": "add image",
@@ -37,16 +37,16 @@
         ],
         "anchors": [
           {
-            "title": "APP DESIGN"
+            "anchor-title": "APP DESIGN"
           },
           {
-            "title": "GRAPHIC DESIGN"
+            "anchor-title": "GRAPHIC DESIGN"
           }
         ]
       },
       {
-        "title": "App Design",
-        "subtitle": "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
+        "design-title": "App Design",
+        "design-subtitle": "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
         "projects": [
           {
             "image": "add image",
@@ -76,18 +76,18 @@
         ],
         "anchors": [
           {
-            "title": "WEB DESIGN"
+            "anchor-title": "WEB DESIGN"
           },
           {
-            "title": "GRAPHIC DESIGN"
+            "anchor-title": "GRAPHIC DESIGN"
           }
         ]
       }
     ],
     "appDesign": [
       {
-        "title": "Graphic Design",
-        "subtitle": "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
+        "design-title": "Graphic Design",
+        "design-subtitle": "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
         "projects": [
           {
             "image": "add image",
@@ -107,10 +107,10 @@
         ],
         "anchors": [
           {
-            "title": "APP DESIGN"
+            "anchor-title": "APP DESIGN"
           },
           {
-            "title": "WEB DESIGN"
+            "anchor-title": "WEB DESIGN"
           }
         ]
       }
