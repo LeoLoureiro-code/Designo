@@ -1,0 +1,200 @@
+{
+    "Design": [
+      {
+        "design-title": "Web Design",
+        "design-subtitle": "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
+        "projects": [
+          {
+            "image": "add image",
+            "title": "EXPRESS",
+            "subtitle": "A multi-carrier shipping website for ecommerce businesses"
+          },
+          {
+            "image": "add image",
+            "title": "TRANSFER",
+            "subtitle": "Site for low-cost money transfers and sending money within seconds"
+          },
+          {
+            "image": "add image",
+            "title": "PHOTON",
+            "subtitle": "A state-of-the-art music player with high-resolution audio and DSP effects"
+          },
+          {
+            "image": "add image",
+            "title": "BUILDER",
+            "subtitle": "Connects users with local contractors based on their location"
+          },
+          {
+            "image": "add image",
+            "title": "BLOGR",
+            "subtitle": "Blogr is a platform for creating an online blog or publication"
+          },
+          {
+            "image": "add image",
+            "title": "CAMP",
+            "subtitle": "Get expert training in coding, data, design, and digital marketing"
+          }
+        ],
+        "anchors": [
+          {
+            "anchor-title": "APP DESIGN"
+          },
+          {
+            "anchor-title": "GRAPHIC DESIGN"
+          }
+        ]
+      },
+      {
+        "design-title": "App Design",
+        "design-subtitle": "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
+        "projects": [
+          {
+            "image": "add image",
+            "title": "AIRFILTER",
+            "subtitle": "Solving the problem of poor indoor air quality by filtering the air"
+          },
+          {
+            "image": "add image",
+            "title": "EYECAM",
+            "subtitle": "Product that lets you edit your favorite photos and videos at any time"
+          },
+          {
+            "image": "add image",
+            "title": "FACEIT",
+            "subtitle": "Get to meet your favorite internet superstar with the faceit app"
+          },
+          {
+            "image": "add image",
+            "title": "TODO",
+            "subtitle": "A todo app that features cloud sync with light and dark mode"
+          },
+          {
+            "image": "add image",
+            "title": "LOOPSTUDIOS",
+            "subtitle": "A VR experience app made for Loopstudios"
+          }
+        ],
+        "anchors": [
+          {
+            "anchor-title": "WEB DESIGN"
+          },
+          {
+            "anchor-title": "GRAPHIC DESIGN"
+          }
+        ]
+      }
+    ],
+    "appDesign": [
+      {
+        "design-title": "Graphic Design",
+        "design-subtitle": "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
+        "projects": [
+          {
+            "image": "add image",
+            "title": "TIM BROWN",
+            "subtitle": "A book cover designed for Tim Brown’s new release, ‘Change’"
+          },
+          {
+            "image": "add image",
+            "title": "BOXED WATER",
+            "subtitle": "A simple packaging concept made for Boxed Water"
+          },
+          {
+            "image": "add image",
+            "title": "SCIENCE!",
+            "subtitle": "A poster made in collaboration with the Federal Art Project"
+          }
+        ],
+        "anchors": [
+          {
+            "anchor-title": "APP DESIGN"
+          },
+          {
+            "anchor-title": "WEB DESIGN"
+          }
+        ]
+      }
+    ]
+  },
+  
+
+  {
+    "services": [
+      {
+        "design-title": "Web Design",
+        "design-subtitle": "Creating visually appealing and user-friendly websites.",
+        "examples": [
+          {
+            "example-image": "web-design-example1.jpg",
+            "example-title": "E-commerce Website",
+            "example-description": "A responsive e-commerce site with a sleek UI and seamless navigation."
+          },
+          {
+            "example-image": "web-design-example2.jpg",
+            "example-title": "Portfolio Website",
+            "example-description": "A creative portfolio site showcasing projects with smooth animations."
+          },
+          {
+            "example-image": "web-design-example3.jpg",
+            "example-title": "Corporate Website",
+            "example-description": "Professional corporate site with a focus on branding and user trust."
+          }
+        ],
+        "anchors": {
+          "anchor-one": "Learn more about Web Design",
+          "anchor-two": "View Web Design Portfolio"
+        }
+      },
+      {
+        "design-title": "App Design",
+        "design-subtitle": "Designing intuitive and engaging mobile and web applications.",
+        "examples": [
+          {
+            "example-image": "app-design-example1.jpg",
+            "example-title": "Social Media App",
+            "example-description": "A mobile app with an interactive and user-friendly feed."
+          },
+          {
+            "example-image": "app-design-example2.jpg",
+            "example-title": "Fitness App",
+            "example-description": "An app with custom tracking features and personalized dashboards."
+          },
+          {
+            "example-image": "app-design-example3.jpg",
+            "example-title": "Productivity App",
+            "example-description": "A productivity app with minimalistic design and efficient workflows."
+          }
+        ],
+        "anchors": {
+          "anchor-one": "Discover more about App Design",
+          "anchor-two": "View App Design Portfolio"
+        }
+      },
+      {
+        "design-title": "Graphic Design",
+        "design-subtitle": "Crafting visuals for branding, marketing, and social media.",
+        "examples": [
+          {
+            "example-image": "graphic-design-example1.jpg",
+            "example-title": "Logo Design",
+            "example-description": "A unique logo crafted to represent the brand's identity."
+          },
+          {
+            "example-image": "graphic-design-example2.jpg",
+            "example-title": "Social Media Graphics",
+            "example-description": "Engaging and creative graphics for social media platforms."
+          },
+          {
+            "example-image": "graphic-design-example3.jpg",
+            "example-title": "Marketing Materials",
+            "example-description": "Visually compelling materials for promotional campaigns."
+          }
+        ],
+        "anchors": {
+          "anchor-one": "Explore more about Graphic Design",
+          "anchor-two": "View Graphic Design Portfolio"
+        }
+      }
+    ]
+  }
+  
