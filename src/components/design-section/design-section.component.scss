@@ -22,6 +22,8 @@ section{
     filter: brightness(80%);
     cursor: pointer;
     color: $white;
+    text-decoration: none;
+    text-align: center;
 }
 
 .web-design{
@@ -59,6 +61,7 @@ section{
     margin-top: 1rem;
     font-size: 18px;
     z-index: 1;
+    text-align: center;
 
     span{
         color: $peach;
