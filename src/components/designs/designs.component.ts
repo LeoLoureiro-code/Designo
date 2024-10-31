@@ -2,6 +2,21 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { JSONReaderService } from '../../services/jsonreaderservice.service';
 
+
+interface DesignData {
+  "design-title": string;
+  "design-subtitle": string;
+  examples: {
+    "example-image": string;
+    "example-title": string;
+    "example-description": string;
+  }[];
+  anchors: {
+    "anchor-one"?: string;
+    "anchor-two"?: string;
+  }[];
+}
+
 @Component({
   selector: 'designs',
   standalone: true,
