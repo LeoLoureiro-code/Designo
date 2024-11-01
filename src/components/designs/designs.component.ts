@@ -30,6 +30,7 @@ export class DesignsComponent {
   constructor(private jsonReaderService: JSONReaderService) {}
 
   ngOnInit(): void {
+    let designArray:[];
     this.jsonReaderService.getJsonData().subscribe(data => {
       console.log(data);
     });
