@@ -4,7 +4,7 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
-import { JSONReaderService } from '../services/jsonreaderservice.service';
+import { DesignDataService } from '../services/jsonreaderservice.service';
 import { provideHttpClient } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {

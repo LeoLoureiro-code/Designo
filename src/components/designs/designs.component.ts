@@ -1,21 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { JSONReaderService } from '../../services/jsonreaderservice.service';
-
-
-interface DesignData {
-  "design-title": string;
-  "design-subtitle": string;
-  examples: {
-    "example-image": string;
-    "example-title": string;
-    "example-description": string;
-  }[];
-  anchors: {
-    "anchor-one"?: string;
-    "anchor-two"?: string;
-  }[];
-}
+import { DesignDataService, DesignCategory } from '../../services/jsonreaderservice.service';
 
 @Component({
   selector: 'designs',
@@ -23,17 +8,18 @@ interface DesignData {
   imports: [RouterModule],
   templateUrl: './designs.component.html',
   styleUrl: './designs.component.scss',
-  providers: [JSONReaderService],
+  providers: [DesignDataService],
 })
-export class DesignsComponent {
 
-  constructor(private jsonReaderService: JSONReaderService) {}
+export class DesignComponent implements OnInit {
+  designData: DesignCategory[] = [];
+
+  constructor(private designDataService: DesignDataService) {}
 
   ngOnInit(): void {
-    let designArray:[];
-    this.jsonReaderService.getJsonData().subscribe(data => {
-      console.log(data);
+    this.designDataService.getDesignData().subscribe(data => {
+      this.designData = data;
+      console.log(this.designData);
     });
   }
-
 }
