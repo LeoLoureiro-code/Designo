@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DesignDataService, DesignCategory } from '../../services/jsonreaderservice.service';
+import { DesignDataService, DesignCategory } from '../../services/jsonreader.service';
 
 @Component({
   selector: 'designs',

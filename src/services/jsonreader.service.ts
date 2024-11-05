@@ -17,6 +17,8 @@ export interface DesignCategory {
   }[];
 }
 
+var designChosen:string;
+
 
 
 @Injectable({
@@ -32,4 +34,6 @@ export class DesignDataService {
   }
 }
 
+
+export type designChosen = "";
 export type DesignData = DesignCategory[];

@@ -9,7 +9,7 @@ import { AboutUsComponent } from '../components/about-us/about-us.component';
 import { LocationsComponent } from '../components/locations/locations.component';
 import { ContactUsComponent } from '../components/contact-us/contact-us.component';
 import { DesignComponent } from '../components/designs/designs.component';
-import { DesignDataService } from '../services/jsonreaderservice.service';
+import { DesignDataService } from '../services/jsonreader.service';
 
 
 @Component({

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { designChosen } from '../../services/jsonreader.service';
 
 
 @Component({
@@ -14,5 +15,9 @@ import { RouterModule } from '@angular/router';
 
 
 export class DesignSectionComponent {
+
+  getDesign(): string {
+    return "it works!";
+  }
 
 }
