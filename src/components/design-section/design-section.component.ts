@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { designChosen } from '../../services/jsonreader.service';
+import { DesignDataService } from '../../services/jsonreader.service';
 
 
 @Component({
@@ -14,10 +14,11 @@ import { designChosen } from '../../services/jsonreader.service';
 
 
 
-export class DesignSectionComponent {
+export class DesignSectionComponent{
 
-  getDesign(): string {
-    return "it works!";
+  constructor(private designDataService: DesignDataService){}
+
+  sendData(){
+    this.designDataService.changeDesign('');
   }
-
 }

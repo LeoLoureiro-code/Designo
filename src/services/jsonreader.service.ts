@@ -1,7 +1,7 @@
 // src/app/services/design-data.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 
 export interface DesignCategory {
   "design-title": string;
@@ -25,6 +25,9 @@ var designChosen:string;
   providedIn: 'root'
 })
 export class DesignDataService {
+  //Variables
+  private dataDesign = new BehaviorSubject<string>('');
+  currentData = this.dataDesign.asObservable();
   private jsonUrl = 'assets/design.json';
 
   constructor(private http: HttpClient) {}
@@ -32,6 +35,11 @@ export class DesignDataService {
   getDesignData(): Observable<DesignCategory[]> {
     return this.http.get<DesignCategory[]>(this.jsonUrl);
   }
+
+  changeDesign(data: string){
+    this.dataDesign.next(data);
+  }
+
 }
 
 

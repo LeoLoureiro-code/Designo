@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DesignDataService, DesignCategory } from '../../services/jsonreader.service';
+import { DesignDataService } from '../../services/jsonreader.service';
 
 @Component({
   selector: 'designs',
@@ -12,14 +12,15 @@ import { DesignDataService, DesignCategory } from '../../services/jsonreader.ser
 })
 
 export class DesignComponent implements OnInit {
-  designData: DesignCategory[] = [];
+  
+  data: string = '';
 
   constructor(private designDataService: DesignDataService) {}
 
-  ngOnInit(): void {
-    this.designDataService.getDesignData().subscribe(data => {
-      this.designData = data;
-      console.log(this.designData);
+  ngOnInit() {
+    this.designDataService.currentData.subscribe((data) => {
+      this.data = data;
+      console.log(data);
     });
   }
 }
