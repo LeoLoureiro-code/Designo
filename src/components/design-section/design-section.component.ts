@@ -18,7 +18,8 @@ export class DesignSectionComponent{
 
   constructor(private designDataService: DesignDataService){}
 
-  sendData(){
-    this.designDataService.changeDesign('');
+  SendData(designChosen: string){
+    console.log(designChosen);
+    this.designDataService.ChangeDesign(designChosen);
   }
 }

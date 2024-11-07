@@ -17,7 +17,6 @@ export interface DesignCategory {
   }[];
 }
 
-var designChosen:string;
 
 
 
@@ -36,7 +35,7 @@ export class DesignDataService {
     return this.http.get<DesignCategory[]>(this.jsonUrl);
   }
 
-  changeDesign(data: string){
+  ChangeDesign(data: string){
     this.dataDesign.next(data);
   }
 
