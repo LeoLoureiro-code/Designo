@@ -13,13 +13,13 @@ import { DesignDataService } from '../../services/jsonreader.service';
 
 export class DesignComponent implements OnInit {
   
-  data: string = '';
+  designData: string = '';
 
   constructor(private designDataService: DesignDataService) {}
 
   ngOnInit() {
     this.designDataService.currentData.subscribe((data) => {
-      this.data = data;
+      this.designData = data;
       console.log(data);
     });
   }
