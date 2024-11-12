@@ -3,6 +3,30 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, BehaviorSubject } from 'rxjs';
 
+
+@Injectable({
+  providedIn: 'root'
+})
+
+export class DesignDataService {
+  public dataDesign: string = "";
+  private jsonUrl = 'assets/design.json';
+
+  constructor(private http: HttpClient) {}
+
+  getDesignData(): Observable<DesignCategory[]> {
+    return this.http.get<DesignCategory[]>(this.jsonUrl);
+  }
+
+  ChangeDesign(data: string) {
+    console.log("En servicio ")
+    console.log(this.dataDesign);
+  }
+}
+
+export type DesignData = DesignCategory[];
+
+
 export interface DesignCategory {
   "design-title": string;
   "design-subtitle": string;
@@ -16,31 +40,3 @@ export interface DesignCategory {
     "anchor-two"?: string;
   }[];
 }
-
-
-
-
-@Injectable({
-  providedIn: 'root'
-})
-export class DesignDataService {
-  //Variables
-  private dataDesign = new BehaviorSubject<string>('');
-  currentData = this.dataDesign.asObservable();
-  private jsonUrl = 'assets/design.json';
-
-  constructor(private http: HttpClient) {}
-
-  getDesignData(): Observable<DesignCategory[]> {
-    return this.http.get<DesignCategory[]>(this.jsonUrl);
-  }
-
-  ChangeDesign(data: string){
-    this.dataDesign.next(data);
-  }
-
-}
-
-
-export type designChosen = "";
-export type DesignData = DesignCategory[];

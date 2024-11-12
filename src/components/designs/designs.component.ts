@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DesignDataService } from '../../services/jsonreader.service';
+import { DesignDataService, DesignCategory } from '../../services/jsonreader.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'designs',
@@ -8,19 +9,30 @@ import { DesignDataService } from '../../services/jsonreader.service';
   imports: [RouterModule],
   templateUrl: './designs.component.html',
   styleUrl: './designs.component.scss',
-  providers: [DesignDataService],
+  providers: [],
 })
 
 export class DesignComponent implements OnInit {
   
-  designData: string = '';
+  designCategories: DesignCategory[] = [];
+  
 
   constructor(private designDataService: DesignDataService) {}
 
-  ngOnInit() {
-    this.designDataService.currentData.subscribe((data) => {
-      this.designData = data;
-      console.log(data);
-    });
+  ngOnInit(): void {
+
+    this.designDataService.getDesignData().subscribe(
+      (data) => {
+        this.designCategories = data;
+        data.forEach(design => {
+          
+        });
+      },
+      (error) => {
+        console.error('Failed to load design data:', error);
+      }
+    );
+    console.log("En designs");
+          console.log(this.designDataService.dataDesign);
   }
 }
