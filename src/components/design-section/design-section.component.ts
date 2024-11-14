@@ -20,6 +20,5 @@ export class DesignSectionComponent{
 
   SendData(designChosen: string){
     this.designDataService.dataDesign = designChosen;
-    console.log(this.designDataService.dataDesign);
   }
 }

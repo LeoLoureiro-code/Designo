@@ -15,6 +15,9 @@ import { Observable } from 'rxjs';
 export class DesignComponent implements OnInit {
   
   designCategories: DesignCategory[] = [];
+
+  title!: string;
+  description! :string;
   
 
   constructor(private designDataService: DesignDataService) {}
@@ -25,14 +28,15 @@ export class DesignComponent implements OnInit {
       (data) => {
         this.designCategories = data;
         data.forEach(design => {
-          
+          if(design['design-title'] == this.designDataService.dataDesign){
+            this.title = design['design-title'];
+            this.description = design['design-subtitle']
+          }
         });
       },
       (error) => {
         console.error('Failed to load design data:', error);
       }
     );
-    console.log("En designs");
-          console.log(this.designDataService.dataDesign);
   }
 }
