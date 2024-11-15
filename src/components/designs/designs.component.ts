@@ -3,6 +3,26 @@ import { RouterModule } from '@angular/router';
 import { DesignDataService, DesignCategory } from '../../services/jsonreader.service';
 import { Observable } from 'rxjs';
 
+
+type Example = {
+  "example-image": string;
+  "example-title": string;
+  "example-description": string;
+};
+
+type Anchor = {
+  "anchor-one"?: string;
+  "anchor-two"?: string;
+};
+
+let DesignObject: {
+  title: string;
+  subtitle: string;
+  examples: Example[];
+  anchors: Anchor[];
+};
+
+
 @Component({
   selector: 'designs',
   standalone: true,
@@ -13,12 +33,22 @@ import { Observable } from 'rxjs';
 })
 
 export class DesignComponent implements OnInit {
+
   
   designCategories: DesignCategory[] = [];
 
-  title!: string;
-  description! :string;
-  
+  DesignObject: {
+    title: string;
+    subtitle: string;
+    examples: Example[];
+    anchors: Anchor[];
+  } = {
+    title: '',
+    subtitle: '',
+    examples: [],
+    anchors: []
+  };
+
 
   constructor(private designDataService: DesignDataService) {}
 
@@ -29,8 +59,11 @@ export class DesignComponent implements OnInit {
         this.designCategories = data;
         data.forEach(design => {
           if(design['design-title'] == this.designDataService.dataDesign){
-            this.title = design['design-title'];
-            this.description = design['design-subtitle']
+            DesignObject.title = design['design-title'];
+            console.log(DesignObject.title);
+            DesignObject.subtitle = design['design-subtitle'];
+            DesignObject.examples = design['examples'];
+            DesignObject.anchors = design['anchors'];
           }
         });
       },
