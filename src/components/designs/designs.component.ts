@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { DesignDataService, DesignCategory } from '../../services/jsonreader.service';
+import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
 
 
@@ -15,18 +16,13 @@ type Anchor = {
   "anchor-two"?: string;
 };
 
-let DesignObject: {
-  title: string;
-  subtitle: string;
-  examples: Example[];
-  anchors: Anchor[];
-};
+
 
 
 @Component({
   selector: 'designs',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './designs.component.html',
   styleUrl: './designs.component.scss',
   providers: [],
@@ -37,7 +33,7 @@ export class DesignComponent implements OnInit {
   
   designCategories: DesignCategory[] = [];
 
-  DesignObject: {
+   DesignObject: {
     title: string;
     subtitle: string;
     examples: Example[];
@@ -59,11 +55,12 @@ export class DesignComponent implements OnInit {
         this.designCategories = data;
         data.forEach(design => {
           if(design['design-title'] == this.designDataService.dataDesign){
-            DesignObject.title = design['design-title'];
-            console.log(DesignObject.title);
-            DesignObject.subtitle = design['design-subtitle'];
-            DesignObject.examples = design['examples'];
-            DesignObject.anchors = design['anchors'];
+            //Fix this. It is undefined
+            this.DesignObject.title = design['design-title'];
+            console.log(this.DesignObject.title);
+            this.DesignObject.subtitle = design['design-subtitle'];
+            this.DesignObject.examples = design['examples'];
+            this.DesignObject.anchors = design['anchors'];
           }
         });
       },

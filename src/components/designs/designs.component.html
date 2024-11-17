@@ -7,73 +7,17 @@
     </div>
     
     <div class="cards-div">
-        <div class="card">
-            <div class="card-image">
-                <img src="" alt="">
-            </div>
-            <div class="card-info">
-                <h2 class="card-title">EXPRESS</h2>
-                <p class="card-paragraph">
-                    A multi-carrier shipping website for e-commerce businesses
-                </p>
-            </div>
+        <div class="card" *ngFor="let example of DesignObject.examples">
+          <div class="card-image">
+            <!--Add images into json-->
+            <img [src]="'assets/designs'+example['example-image'] + example['example-title'] + '.jpg'" alt="{{ example['example-title'] }}">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">{{ example['example-title'] }}</h2>
+            <p class="card-paragraph">{{ example['example-description'] }}</p>
+          </div>
         </div>
-        <div class="card">
-            <div class="card-image">
-                <img src="" alt="">
-            </div>
-            <div class="card-info">
-                <h2 class="card-title">EXPRESS</h2>
-                <p class="card-paragraph">
-                    A multi-carrier shipping website for e-commerce businesses
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-image">
-                <img src="" alt="">
-            </div>
-            <div class="card-info">
-                <h2 class="card-title">EXPRESS</h2>
-                <p class="card-paragraph">
-                    A multi-carrier shipping website for e-commerce businesses
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-image">
-                <img src="" alt="">
-            </div>
-            <div class="card-info">
-                <h2 class="card-title">EXPRESS</h2>
-                <p class="card-paragraph">
-                    A multi-carrier shipping website for e-commerce businesses
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-image">
-                <img src="" alt="">
-            </div>
-            <div class="card-info">
-                <h2 class="card-title">EXPRESS</h2>
-                <p class="card-paragraph">
-                    A multi-carrier shipping website for e-commerce businesses
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-image">
-                <img src="" alt="">
-            </div>
-            <div class="card-info">
-                <h2 class="card-title">EXPRESS</h2>
-                <p class="card-paragraph">
-                    A multi-carrier shipping website for e-commerce businesses
-                </p>
-            </div>
-        </div>
-    </div>
+      </div>
     <div class="designs">
         <div class="design-type">
             <div class="hover-div"></div>
