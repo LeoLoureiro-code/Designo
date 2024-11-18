@@ -10,7 +10,7 @@
         <div class="card" *ngFor="let example of DesignObject.examples">
           <div class="card-image">
             <!--Add images into json-->
-            <img [src]="'assets/designs'+example['example-image'] + example['example-title'] + '.jpg'" alt="{{ example['example-title'] }}">
+            <img [src]="example['example-image']">
           </div>
           <div class="card-info">
             <h2 class="card-title">{{ example['example-title'] }}</h2>
