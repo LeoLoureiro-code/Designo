@@ -40,7 +40,7 @@ h1{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:flex-start;
     align-items: start;
     margin-top: 9rem;
 }
@@ -89,11 +89,29 @@ h1{
 
 .designs{
     width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .design-type{
+    font-family: $font;
     width: 541px;
     height: 308px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.design-one{
+    grid-column-start: 1;
+}
+
+.design-two{
+    grid-column-start: 2;
 }
 
 @media(width <= 1200px){

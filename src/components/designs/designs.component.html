@@ -9,7 +9,6 @@
     <div class="cards-div">
         <div class="card" *ngFor="let example of DesignObject.examples">
           <div class="card-image">
-            <!--Add images into json-->
             <img [src]="example['example-image']">
           </div>
           <div class="card-info">
@@ -18,20 +17,21 @@
           </div>
         </div>
       </div>
-    <div class="designs">
-        <div class="design-type">
+      <!-- Show every anchor-->
+    <div class="designs design-one">
+        <div class="design-type" *ngFor="let anchor of DesignObject.anchors">
             <div class="hover-div"></div>
             <a [routerLink]="['/designs']" routerLinkActive="router-link-active">
-                <h2 class="design-title"></h2>
-                <p class="design-paragraph"> <span>&gt;</span></p>
+                <h2 class="design-title">{{DesignObject.anchors}}</h2>
+                <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
             </a>
         </div>
-        <div class="design-type">
+        <!-- <div class="design-type design-two">
             <div class="hover-div"></div>
             <a [routerLink]="['/designs']" routerLinkActive="router-link-active">
-                <h2 class="design-title"></h2>
-                <p class="design-paragraph"> <span>&gt;</span></p>
+                <h2 class="design-title">{{DesignObject.anchors[1]}}</h2>
+                <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
             </a>
-        </div>
+        </div> -->
     </div>
 </section>
