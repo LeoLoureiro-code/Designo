@@ -18,14 +18,25 @@
         </div>
       </div>
       <!-- Show every anchor-->
-    <div class="designs design-one">
-        <div class="design-type" *ngFor="let anchor of DesignObject.anchors">
-            <div class="hover-div"></div>
-            <a [routerLink]="['/designs']" routerLinkActive="router-link-active">
-                <h2 class="design-title">{{DesignObject.anchors}}</h2>
-                <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
-            </a>
+      <div class="designs design-one">
+        <!-- First anchor -->
+        <div class="design-type">
+          <div class="hover-div"></div>
+          <a [routerLink]="['/designs']" routerLinkActive="router-link-active">
+            <h2 class="design-title">{{ DesignObject.anchors[0]['anchor-one'] }}</h2>
+            <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
+          </a>
         </div>
+      
+        <!-- Second anchor -->
+        <div class="design-type">
+          <div class="hover-div"></div>
+          <a [routerLink]="['/designs']" routerLinkActive="router-link-active">
+            <h2 class="design-title">{{ DesignObject.anchors[1]['anchor-two'] }}</h2>
+            <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
+          </a>
+        </div>
+      </div>
         <!-- <div class="design-type design-two">
             <div class="hover-div"></div>
             <a [routerLink]="['/designs']" routerLinkActive="router-link-active">
@@ -33,5 +44,4 @@
                 <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
             </a>
         </div> -->
-    </div>
 </section>
