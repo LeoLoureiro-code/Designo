@@ -99,20 +99,37 @@ h1{
     font-family: $font;
     width: 541px;
     height: 308px;
-    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
 }
 
-.design-one{
-    grid-column-start: 1;
+.img-design-type{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 0;
 }
 
-.design-two{
-    grid-column-start: 2;
+.design-anchor{
+    position: relative;
+    width: 100%;
+    display: flex;
+    opacity: 0.8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    text-decoration: none;
+    font-family: $font;
 }
+
+.design-title, .design-paragraph{
+    z-index: 2;
+}
+
 
 @media(width <= 1200px){
 

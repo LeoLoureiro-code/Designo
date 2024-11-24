@@ -32,6 +32,7 @@ export class DesignComponent implements OnInit {
 
   
   designCategories: DesignCategory[] = [];
+  newVariable: any ="";
 
    DesignObject: {
     title: string;
@@ -61,6 +62,9 @@ export class DesignComponent implements OnInit {
             this.DesignObject.subtitle = design['design-subtitle'];
             this.DesignObject.examples = design['examples'];
             this.DesignObject.anchors = design['anchors'];
+            //Trim the JSON value
+            this.newVariable = this.DesignObject.anchors[0]['anchor-one']?.replace(/\s/g, "").toLowerCase();
+            console.log(this.newVariable);
           }
         });
       },
