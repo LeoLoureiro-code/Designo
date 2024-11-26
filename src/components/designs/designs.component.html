@@ -22,7 +22,7 @@
         <!-- First anchor -->
         <div class="design-type">
           <a [routerLink]="['/designs']" routerLinkActive="router-link-active" class="design-anchor">
-            <img [src]="'assets/home/desktop/image-' + newVariable + '.jpg'" class="img-design-type" alt="Design type">
+            <img [src]="'assets/home/desktop/image-' + anchorOne + '.jpg'" class="img-design-type" alt="Design type">
             <h2 class="design-title">{{ DesignObject.anchors[0]['anchor-one'] }}</h2>
             <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
           </a>
@@ -31,7 +31,7 @@
         <!-- Second anchor -->
         <div class="design-type">
           <a [routerLink]="['/designs']" routerLinkActive="router-link-active" class="design-anchor">
-            <img src="image- + {{ DesignObject.anchors[1]['anchor-two']?.toLowerCase}}" alt="">
+            <img [src]="'assets/home/desktop/image-' + anchorTwo + '.jpg'" class="img-design-type" alt="Design type">
             <h2 class="design-title">{{ DesignObject.anchors[1]['anchor-two'] }}</h2>
             <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
           </a>

@@ -109,7 +109,8 @@ h1{
 .img-design-type{
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
+    filter: brightness(50%);
     z-index: 0;
 }
 
@@ -117,17 +118,19 @@ h1{
     position: relative;
     width: 100%;
     display: flex;
-    opacity: 0.8;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: $white;
     text-decoration: none;
     font-family: $font;
+    overflow: hidden;
+    height: 350px;
 }
 
 .design-title, .design-paragraph{
     z-index: 2;
+    filter: brightness(150%);
 }
 
 
