@@ -46,7 +46,7 @@ h1{
 }
 
 .card{
-    width: 350px;
+    width: 320px;
     height: 478px;
     margin: 0.5rem;
     background-color: $light-grey;
@@ -147,7 +147,7 @@ h1{
     
 
     .cards-div{
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -160,9 +160,5 @@ h1{
     .banner{
         width: 100%;
         margin: 0 auto;
-    }
-
-    .cards-div{
-        width: 80%;
     }
 }
