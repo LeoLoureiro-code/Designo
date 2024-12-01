@@ -18,7 +18,7 @@ export class DesignSectionComponent{
 
   constructor(private designDataService: DesignDataService){}
 
-  SendData(designChosen: string){
+  SendData(designChosen: any){
     this.designDataService.dataDesign = designChosen;
   }
 }
