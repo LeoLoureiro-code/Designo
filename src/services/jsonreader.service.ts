@@ -18,10 +18,6 @@ export class DesignDataService {
     return this.http.get<DesignCategory[]>(this.jsonUrl);
   }
 
-  ChangeDesign(data: string) {
-    console.log("En servicio ")
-    console.log(this.dataDesign);
-  }
 }
 
 export type DesignData = DesignCategory[];
