@@ -1,40 +1,47 @@
 <section>
-    <div class="banner">
-        <h1>{{ DesignObject.title }}</h1>
-        <p class="banner-paragraph">
-            {{DesignObject.subtitle}}
-        </p>
+  <div class="banner">
+      <h1>{{ DesignObject.title }}</h1>
+      <p class="banner-paragraph">
+          {{DesignObject.subtitle}}
+      </p>
+  </div>
+  
+  <div class="cards-div">
+      <div class="card" *ngFor="let example of DesignObject.examples">
+        <div class="card-image">
+          <img [src]="example['example-image']">
+        </div>
+        <div class="card-info">
+          <h2 class="card-title">{{ example['example-title'] }}</h2>
+          <p class="card-paragraph">{{ example['example-description'] }}</p>
+        </div>
+      </div>
     </div>
+    <div class="designs" *ngIf="DesignObject.anchors.length > 0">
+      <!-- First Anchor -->
+      <div class="design-type" *ngIf="anchorOne">
+        <a 
+          [routerLink]="['/designs']" 
+          routerLinkActive="router-link-active" 
+          class="design-anchor" 
+          (click)="ChangeDesign(DesignObject.anchors[0]['anchor-one'])">
+          <img [src]="'assets/home/desktop/image-' + anchorOne + '.jpg'" class="img-design-type" alt="Design type">
+          <h2 class="design-title">{{ DesignObject.anchors[0]['anchor-one'] }}</h2>
+          <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
+        </a>
+      </div>
     
-    <div class="cards-div">
-        <div class="card" *ngFor="let example of DesignObject.examples">
-          <div class="card-image">
-            <img [src]="example['example-image']">
-          </div>
-          <div class="card-info">
-            <h2 class="card-title">{{ example['example-title'] }}</h2>
-            <p class="card-paragraph">{{ example['example-description'] }}</p>
-          </div>
-        </div>
+      <!-- Second Anchor -->
+      <div class="design-type" *ngIf="anchorTwo">
+        <a 
+          [routerLink]="['/designs']" 
+          routerLinkActive="router-link-active" 
+          class="design-anchor" 
+          (click)="ChangeDesign(DesignObject.anchors[1]['anchor-two'])">
+          <img [src]="'assets/home/desktop/image-' + anchorTwo + '.jpg'" class="img-design-type" alt="Design type">
+          <h2 class="design-title">{{ DesignObject.anchors[1]['anchor-two'] }}</h2>
+          <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
+        </a>
       </div>
-      <!-- Show every anchor-->
-      <div class="designs">
-        <!-- First anchor -->
-        <div class="design-type">
-          <a [routerLink]="['/designs']" routerLinkActive="router-link-active" class="design-anchor">
-            <img [src]="'assets/home/desktop/image-' + anchorOne + '.jpg'" class="img-design-type" alt="Design type">
-            <h2 class="design-title">{{ DesignObject.anchors[0]['anchor-one'] }}</h2>
-            <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
-          </a>
-        </div>
-      
-        <!-- Second anchor -->
-        <div class="design-type">
-          <a [routerLink]="['/designs']" routerLinkActive="router-link-active" class="design-anchor">
-            <img [src]="'assets/home/desktop/image-' + anchorTwo + '.jpg'" class="img-design-type" alt="Design type">
-            <h2 class="design-title">{{ DesignObject.anchors[1]['anchor-two'] }}</h2>
-            <p class="design-paragraph">VIEW PROJECTS <span>&gt;</span></p>
-          </a>
-        </div>
-      </div>
+    </div>
 </section>
