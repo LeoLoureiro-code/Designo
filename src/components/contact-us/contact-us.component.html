@@ -1,32 +1,46 @@
 <section>
     <div class="contact">
-        <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p class="contact-info-paragraph">
-                Ready to take it to the next level? Let’s talk about your project or idea 
-                and find out how we can help your business grow. If you are looking for unique 
-                digital experiences that’s relatable to your users, drop us a line.
-            </p>
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p class="contact-info-paragraph">
+          Ready to take it to the next level? Let’s talk about your project or idea
+          and find out how we can help your business grow. If you are looking for unique
+          digital experiences that’s relatable to your users, drop us a line.
+        </p>
+      </div>
+      <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="input-div">
+          <label for="name" class="label">Name</label>
+          <input formControlName="name" type="text" class="form-input" />
+          <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+            <small *ngIf="contactForm.get('name')?.hasError('required')">Name is required.</small>
+          </div>
         </div>
-        <form action="#" class="contact-form">
-            <div class="input-div">
-                <label for="name" class="label">Name</label>
-                <input type="text" name="name" class="form-input">
-            </div>
-            <div class="input-div">
-                <label for="email" class="label">Email Address</label>
-                <input type="text" name="email" class="form-input">
-            </div>
-            <div class="input-div">
-                <label for="phone" class="label">Phone Number</label>
-                <input type="text" name="phone" class="form-input">
-            </div>
-            <div class="input-div">
-                <label for="message" class="label">Your Message</label>
-                <textarea name="message" id="" class="form-input"></textarea>
-            </div>
-            <input type="submit" class="submit" value="SUBMIT">
-        </form>
+      
+        <div class="input-div">
+          <label for="email" class="label">Email Address</label>
+          <input formControlName="email" type="text" class="form-input" />
+          <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+            <small *ngIf="contactForm.get('email')?.hasError('required')">Email is required.</small>
+          </div>
+        </div>
+      
+        <div class="input-div">
+          <label for="phone" class="label">Phone Number</label>
+          <input formControlName="phone" type="text" class="form-input" />
+        </div>
+      
+        <div class="input-div">
+          <label for="message" class="label">Your Message</label>
+          <textarea formControlName="message" class="form-input"></textarea>
+          <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+            <small *ngIf="contactForm.get('message')?.hasError('required')">Message is required.</small>
+          </div>
+        </div>
+      
+        <input type="submit" class="submit" value="SUBMIT" [disabled]="contactForm.invalid" />
+      </form>
     </div>
-    <locations-nav></locations-nav> 
-</section>
+    <locations-nav></locations-nav>
+  </section>
+  
